@@ -6,13 +6,9 @@
 #    By: cfabian <cfabian@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/01 15:09:23 by cfabian           #+#    #+#              #
-#    Updated: 2021/12/01 16:05:09 by cfabian          ###   ########.fr        #
+#    Updated: 2021/12/01 16:10:31 by cfabian          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
-from types import SimpleNamespace
-
 
 data = []
 with open("input.txt", 'r') as file:
