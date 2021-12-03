@@ -6,11 +6,10 @@
 #    By: cfabian <cfabian@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/01 15:09:23 by cfabian           #+#    #+#              #
-#    Updated: 2021/12/01 16:10:31 by cfabian          ###   ########.fr        #
+#    Updated: 2021/12/01 17:55:28 by cfabian          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-data = []
 with open("input.txt", 'r') as file:
 	data = file.read().splitlines()
 
