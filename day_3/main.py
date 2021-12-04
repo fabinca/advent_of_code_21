@@ -6,9 +6,12 @@
 #    By: cfabian <cfabian@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/03 17:44:52 by cfabian           #+#    #+#              #
-#    Updated: 2021/12/03 18:39:36 by cfabian          ###   ########.fr        #
+#    Updated: 2021/12/03 19:06:11 by cfabian          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+from datetime import datetime
+start = datetime.now()
 
 with open("input.txt", 'r') as file:
 	data = file.read().splitlines()
@@ -21,7 +24,7 @@ for bit in data[1]:
 	else: print(bit)
 bitwise_copy = bitwise
 
-'''##Part A
+##Part A
 for entry in data:
 	for i in range(len(bitwise)):
 		if entry[i] == "0":
@@ -50,7 +53,6 @@ print("binary:\t", gamma_rate_bin, epsilon_rate_bin)
 print("int:\t", gamma_int, epsilon_int)
 print("multiplied:\t", gamma_int*epsilon_int)
 
-'''
 ##Part B
 data_copy = data
 #for oxy 
@@ -92,3 +94,6 @@ while len(data) > 1 and i < len(bitwise):
 co_2 = int(data[0], 2)
 print(data)
 print(f"oxy: {oxy}, co_2: {co_2}, multiplied: {oxy*co_2}")
+
+end = datetime.now()
+print(end-start)
